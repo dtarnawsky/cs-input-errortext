@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <form [formGroup]="myForm">
+    <ion-input mode="md" labelPlacement="floating" fill="outline" label="Username" [clearInput]="false"
+      [errorText]="username.length < 8 ? 'The username is not long enough': ''" formControlName="username">
+    </ion-input>
+
+    <ion-input mode="md" labelPlacement="floating" fill="outline" label="Phone" [clearInput]="false"
+      [errorText]="phone.length < 8 ? 'The phone is not long enough': ''" formControlName="phone">
+    </ion-input>
+  </form>
+
+
+</ion-content>
